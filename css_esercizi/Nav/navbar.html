@@ -2,36 +2,33 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="navbar.css">
-    <title>NavBar</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="navbar.css">
+  <title>NavBar</title>
 </head>
 
 <body>
-    <header>
-        <div>
-            <nav class="box">
-                <div class="tasti">
-                    <a href="navbar">NavBar</a>
-                    <a href="#">Home</a>
-                    <a href="#">Link</a>
-                    <select>
-                        <option value="dropdown">Dropdown</option>
-                        <option value="#">Link 0</option>
-                    </select>
-
-                    <button>Disabled</button>
-                </div>
-                <div class="input">
-                    <input type="search" name="search" placeholder="Search">
-                    <button>Search</button>
-                </div>
-
-            </nav>
-        </div>
-
-    </header>
+  <nav>
+    <div class="nav-left">
+      <ul class="links">
+        <li><a href="">link1</a></li>
+        <li><a href="">link2</a></li>
+        <li><a href="">link3</a></li>
+        <select class="tendina">
+        <option>Dropdown</option>
+        <option>Link nascosto</option>
+      </select>
+      <button #disbutton>Disabled</button>
+      </ul>
+      
+    </div>
+    <div class="nav-right">
+      <input type="text" placeholder="Search">
+      <button id="search-button">Search</button>
+    </div>
+    
+  </nav>
 </body>
 
 </html>
