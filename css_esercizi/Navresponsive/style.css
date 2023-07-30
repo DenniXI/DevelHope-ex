@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: darkslateblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 15px;
+    height: 50px;
+}
+.tendina {
+    background-color: transparent;
+    color: white;
+    border: 0;
+}
+
+.tendina:hover {
+    background-color: green;
+    color: black;
+}
+.tendina option{
+    background-color: darkslateblue;
+    
+}
+
+.links button {
+    background-color: darkslateblue;
+    color: grey;
+    border: 0;
+}
+.nav-left{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+.links {
+    list-style-type: none;
+    display: flex;
+    height: 100%;
+}
+
+.links li{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.links li:hover {
+height: 100%;
+background-color: blueviolet;
+color: black;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-right input {
+    margin: 10px;
+    height: 30px;
+    border-radius: 5px;
+}
+#search-button {
+    height: 30px;
+    width: 60px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: green;
+    border: 2px solid;
+    border-color: green;
+    font-size: 15px;
+}
+#search-button:hover {
+    background-color: black;
+    color: white;
+}
+
+.hamburger{
+    display: none;
+}
+
+@media (max-width: 768px){
+    .links, .nav-right{
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+    .hamburger img{
+        max-width: 30px;
+    }
+}
