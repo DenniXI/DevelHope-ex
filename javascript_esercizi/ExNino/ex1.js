@@ -23,10 +23,17 @@
 // console.log(somma)
 // }
 
-const numeri = [2,3,5,8]
+const numeri = [2,3,5,8, "ciao"]
 
-for (let i = 0; i < numeri.length; i++){
-    if(i % numeri.length[i] == 0){
-        console.log("questo è un numero pari")
-    } else (console.log("questo numero è dispari"))
-}
+let mapped = numeri.map((el)=> el + "!")
+console.log(mapped)
+// for (let i = 0; i < numeri.length; i++) {
+//     console.log(numeri)
+// }
+
+
+// for (let i = 0; i < numeri.length; i++){
+//     if(i % numeri.length[i] == 0){
+//         console.log("questo è un numero pari")
+//     } else (console.log("questo numero è dispari"))
+// }
