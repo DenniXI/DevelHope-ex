@@ -1,5 +1,4 @@
 function isAdult({age}) {
-  person[age] = age
   return age >= 18;
 }
 
