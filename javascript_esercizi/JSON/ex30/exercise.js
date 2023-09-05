@@ -12,7 +12,7 @@ class Person {
 
   static fromJson(json) {
     const developer = JSON.parse(json);
-    return new Person(developer.firstName, developer.lastName, developer.age)
+    return new Person(developer.id, developer.firstName, developer.lastName, developer.age)
   }
 }
 
