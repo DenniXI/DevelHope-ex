@@ -4,19 +4,19 @@ const user = {
   age: 25,
 };
 
-//Funzione per salvare l'oggetto user
-function save(user) {
+
+
+function getData() {
   try{
 
     //Convertimento dell'oggetto user in una stringa
-    const userJson = JSON.stringify(user);
-
+    const userJson = localStorage.getItem("user");
+    console.log(userJson)
     //Salva la stringa Json nel localStorage con con la chiave "user"
-    localStorage.setItem("user", userJson);
-    console.log('User object saved to localStorage.');
+    
+    
   } catch {
     (error) => console.error(error)
   }
 }
-
-save(user)
+getData()
