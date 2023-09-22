@@ -20,6 +20,11 @@
 </html>
 
 <script>
-  const form = document.querySelectorAll(".form-input")
-  console.log(form[0].value,form[1].value,form[2].value)
+  const form = document.querySelectorAll(".form-input");
+  form.forEach((item) => {
+    if(item.type === "text"){
+      console.log(item.value)
+    }
+  })
+  // console.log(form)
 </script>
